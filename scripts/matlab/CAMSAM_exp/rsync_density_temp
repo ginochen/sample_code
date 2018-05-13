@@ -1,0 +1,2 @@
+#!/bin/bash
+rsync -av density_temp.m gchen@pegasus2.ccs.miami.edu:~/scripts/matlab/CAMSAM_exp/density_temp.m 

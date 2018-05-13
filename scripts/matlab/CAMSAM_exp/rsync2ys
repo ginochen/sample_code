@@ -1,0 +1,1 @@
+rsync -av ~/scripts/matlab/CAMSAM_exp/*.m ginochen@yellowstone.ucar.edu:~/scripts/matlab/CAMSAM_exp/

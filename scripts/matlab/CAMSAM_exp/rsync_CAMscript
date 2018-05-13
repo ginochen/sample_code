@@ -1,0 +1,13 @@
+#!/bin/bash
+echo 'rsync ~/scripts/matlab/CAMSAM_exp/filename.m to pegasus, type "filename", or 1) getQVTForCAPE 2) getBigQPCVar 3) plot_waterphase 4) getBigQPCVar_mcs'
+read fname
+if [ $fname == 1 ]; then
+   fname='getQVTForCAPE';
+elif [ $fname == 2 ]; then
+   fname='getBigQPCVar';
+elif [ $fname == 3 ]; then
+   fname='plot_waterphase';
+elif [ $fname == 4 ]; then
+   fname='getBigQPCVar_mcs';
+fi
+rsync -av ~/scripts/matlab/CAMSAM_exp/$fname.m gchen@pegasus2.ccs.miami.edu:~/scripts/matlab/CAMSAM_exp/$fname.m 

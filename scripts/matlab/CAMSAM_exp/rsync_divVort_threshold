@@ -1,0 +1,2 @@
+#!/bin/bash
+rsync -av divVort_threshold.m gchen@pegasus2.ccs.miami.edu:~/scripts/matlab/CAMSAM_exp/divVort_threshold.m 

@@ -1,0 +1,26 @@
+# obtain the MCS lon-lat index set
+getMCSlonlat(fin)
+
+# obtain the variables on the MCS lon-lat index set (using modified Yuan and Houze 2011 criteria)
+getMCSVar_3hrly(fin)
+
+# track the MCS clusters using Hierarchical Cluster Analysis with minimum-linkage 
+trackMCS
+ # plotting tools associated to this step
+ - plot_mcs_spatial_freq.m
+ - plot_mcs_size_dist.m
+ - plot_mcs_time_dist.m
+
+# combine the variables according to MCS clusters 
+getMCSVar_combineTime.m
+
+# calc the statistics (mean, median, variance, pca) of the clusters
+mcs_cluster_stats.m
+ - plot_mcs_stats.m
+
+# ensemble cluster field output (for composite analysis)
+mcs_clsuter_var.m
+
+# single cluster field output (for case study)
+mcs_cluster_var_xy.m
+

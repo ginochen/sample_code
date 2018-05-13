@@ -1,0 +1,2 @@
+#!/bin/bash
+rsync -av ~/scripts/shell/submit_divVort.sh gchen@pegasus2.ccs.miami.edu:~/scripts/shell/submit_divVort.sh

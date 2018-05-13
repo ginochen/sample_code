@@ -1,0 +1,2 @@
+#!/bin/bash
+rsync -av plot_waterphase.m gchen@pegasus2.ccs.miami.edu:~/scripts/matlab/CAMSAM_exp/plot_waterphase.m 

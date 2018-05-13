@@ -1,0 +1,2 @@
+#!/bin/bash
+rsync -av basin_varMerge2.m gchen@pegasus2.ccs.miami.edu:~/scripts/matlab/CAMSAM_exp/basin_varMerge2.m
